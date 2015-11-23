@@ -1,0 +1,492 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 11/22/15 10:29 PM
+Description: Watching Server
+
+java.lang.Error
+	at jdk.nashorn.internal.runtime.ScriptObject.ensureSpillSize(ScriptObject.java:3705)
+	at jdk.nashorn.internal.runtime.ScriptObject.initUserAccessors(ScriptObject.java:956)
+	at jdk.nashorn.internal.objects.NativeStrictArguments.<init>(NativeStrictArguments.java:83)
+	at jdk.nashorn.internal.objects.NativeArguments.allocate(NativeArguments.java:270)
+	at jdk.nashorn.internal.objects.Global.allocateArguments(Global.java:2260)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$381$\^eval\_.L:1$move(<eval>)
+	at java.lang.invoke.LambdaForm$DMH/1523554304.invokeStatic_LL_L(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$BMH/1587361034.reinvoke(LambdaForm$BMH)
+	at java.lang.invoke.LambdaForm$MH/834600351.delegate(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$MH/37707050.guard(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$MH/1548858925.linkToCallSite(LambdaForm$MH)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$455$16180A$\^eval\_.L:1$extend$L:460(<eval>:466)
+	at java.lang.invoke.LambdaForm$DMH/1175962212.invokeStatic_L3_L(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$BMH/1944675124.reinvoke(LambdaForm$BMH)
+	at java.lang.invoke.LambdaForm$MH/424058530.delegate(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$MH/1972229709.guard(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$MH/1136001996.linkToCallSite(LambdaForm$MH)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$443$1092III$\^eval\_.L:1$ComplexStairs(<eval>:78)
+	at java.lang.invoke.LambdaForm$DMH/1175962212.invokeStatic_L3_L(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$BMH/253930825.reinvoke(LambdaForm$BMH)
+	at java.lang.invoke.LambdaForm$MH/958198237.exactInvoker(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$MH/73937775.linkToCallSite(LambdaForm$MH)
+	at jdk.nashorn.internal.scripts.Script$442$\^eval\_.:program(<eval>:1)
+	at java.lang.invoke.LambdaForm$DMH/1523554304.invokeStatic_LL_L(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$MH/1400607619.invokeExact_MT(LambdaForm$MH)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:640)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:228)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at java.lang.invoke.LambdaForm$DMH/312243851.invokeVirtual_LL_L(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$BMH/1912217209.reinvoke(LambdaForm$BMH)
+	at java.lang.invoke.LambdaForm$MH/1269477029.exactInvoker(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$reinvoker/2670800.dontInline(LambdaForm$reinvoker)
+	at java.lang.invoke.LambdaForm$MH/1972229709.guard(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$MH/1136001996.linkToCallSite(LambdaForm$MH)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$366$\^eval\_.__onEnable$__onCommand(<eval>:605)
+	at java.lang.invoke.LambdaForm$DMH/1519323200.invokeStatic_L3_I(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$BMH/674504447.reinvoke(LambdaForm$BMH)
+	at java.lang.invoke.LambdaForm$MH/1309412328.invokeExact_MT(LambdaForm$MH)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:631)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:228)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.ScriptObjectMirror.callMember(ScriptObjectMirror.java:199)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.invokeImpl(NashornScriptEngine.java:383)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.invokeFunction(NashornScriptEngine.java:190)
+	at org.scriptcraftjs.canarymod.ScriptCraftPlugin.executeCommand(ScriptCraftPlugin.java:103)
+	at org.scriptcraftjs.canarymod.ScriptCraftPlugin.jsCommand(ScriptCraftPlugin.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.canarymod.commandsys.CommandManager$1.execute(CommandManager.java:322)
+	at net.canarymod.commandsys.CanaryCommand.parseCommand(CanaryCommand.java:103)
+	at net.canarymod.commandsys.CommandManager.parseCommand(CommandManager.java:186)
+	at net.canarymod.api.entity.living.humanoid.CanaryPlayer.executeCommand(CanaryPlayer.java:381)
+	at net.canarymod.api.entity.living.humanoid.CanaryPlayer.chat(CanaryPlayer.java:194)
+	at net.minecraft.network.NetHandlerPlayServer.a(NetHandlerPlayServer.java:850)
+	at net.minecraft.network.play.client.C01PacketChatMessage.a(C01PacketChatMessage.java:34)
+	at net.minecraft.network.play.client.C01PacketChatMessage.a(C01PacketChatMessage.java:42)
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:17)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at net.minecraft.server.MinecraftServer.z(MinecraftServer.java:640)
+	at net.minecraft.server.dedicated.DedicatedServer.z(DedicatedServer.java:446)
+	at net.minecraft.server.MinecraftServer.y(MinecraftServer.java:589)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:491)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at jdk.nashorn.internal.runtime.ScriptObject.ensureSpillSize(ScriptObject.java:3705)
+	at jdk.nashorn.internal.runtime.ScriptObject.initUserAccessors(ScriptObject.java:956)
+	at jdk.nashorn.internal.objects.NativeStrictArguments.<init>(NativeStrictArguments.java:83)
+	at jdk.nashorn.internal.objects.NativeArguments.allocate(NativeArguments.java:270)
+	at jdk.nashorn.internal.objects.Global.allocateArguments(Global.java:2260)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$381$\^eval\_.L:1$move(<eval>)
+	at java.lang.invoke.LambdaForm$DMH/1523554304.invokeStatic_LL_L(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$BMH/1587361034.reinvoke(LambdaForm$BMH)
+	at java.lang.invoke.LambdaForm$MH/834600351.delegate(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$MH/37707050.guard(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$MH/1548858925.linkToCallSite(LambdaForm$MH)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$455$16180A$\^eval\_.L:1$extend$L:460(<eval>:466)
+	at java.lang.invoke.LambdaForm$DMH/1175962212.invokeStatic_L3_L(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$BMH/1944675124.reinvoke(LambdaForm$BMH)
+	at java.lang.invoke.LambdaForm$MH/424058530.delegate(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$MH/1972229709.guard(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$MH/1136001996.linkToCallSite(LambdaForm$MH)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$443$1092III$\^eval\_.L:1$ComplexStairs(<eval>:78)
+	at java.lang.invoke.LambdaForm$DMH/1175962212.invokeStatic_L3_L(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$BMH/253930825.reinvoke(LambdaForm$BMH)
+	at java.lang.invoke.LambdaForm$MH/958198237.exactInvoker(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$MH/73937775.linkToCallSite(LambdaForm$MH)
+	at jdk.nashorn.internal.scripts.Script$442$\^eval\_.:program(<eval>:1)
+	at java.lang.invoke.LambdaForm$DMH/1523554304.invokeStatic_LL_L(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$MH/1400607619.invokeExact_MT(LambdaForm$MH)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:640)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:228)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at java.lang.invoke.LambdaForm$DMH/312243851.invokeVirtual_LL_L(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$BMH/1912217209.reinvoke(LambdaForm$BMH)
+	at java.lang.invoke.LambdaForm$MH/1269477029.exactInvoker(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$reinvoker/2670800.dontInline(LambdaForm$reinvoker)
+	at java.lang.invoke.LambdaForm$MH/1972229709.guard(LambdaForm$MH)
+	at java.lang.invoke.LambdaForm$MH/1136001996.linkToCallSite(LambdaForm$MH)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$366$\^eval\_.__onEnable$__onCommand(<eval>:605)
+	at java.lang.invoke.LambdaForm$DMH/1519323200.invokeStatic_L3_I(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$BMH/674504447.reinvoke(LambdaForm$BMH)
+	at java.lang.invoke.LambdaForm$MH/1309412328.invokeExact_MT(LambdaForm$MH)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:631)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:228)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.ScriptObjectMirror.callMember(ScriptObjectMirror.java:199)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.invokeImpl(NashornScriptEngine.java:383)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.invokeFunction(NashornScriptEngine.java:190)
+	at org.scriptcraftjs.canarymod.ScriptCraftPlugin.executeCommand(ScriptCraftPlugin.java:103)
+	at org.scriptcraftjs.canarymod.ScriptCraftPlugin.jsCommand(ScriptCraftPlugin.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.canarymod.commandsys.CommandManager$1.execute(CommandManager.java:322)
+	at net.canarymod.commandsys.CanaryCommand.parseCommand(CanaryCommand.java:103)
+	at net.canarymod.commandsys.CommandManager.parseCommand(CommandManager.java:186)
+	at net.canarymod.api.entity.living.humanoid.CanaryPlayer.executeCommand(CanaryPlayer.java:381)
+	at net.canarymod.api.entity.living.humanoid.CanaryPlayer.chat(CanaryPlayer.java:194)
+	at net.minecraft.network.NetHandlerPlayServer.a(NetHandlerPlayServer.java:850)
+	at net.minecraft.network.play.client.C01PacketChatMessage.a(C01PacketChatMessage.java:34)
+	at net.minecraft.network.play.client.C01PacketChatMessage.a(C01PacketChatMessage.java:42)
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:17)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at net.minecraft.server.MinecraftServer.z(MinecraftServer.java:640)
+	at net.minecraft.server.dedicated.DedicatedServer.z(DedicatedServer.java:446)
+	at net.minecraft.server.MinecraftServer.y(MinecraftServer.java:589)
+
+-- Thread Dump --
+Details:
+	Threads: "pool-3-thread-24" Id=72 RUNNABLE
+	at java.lang.Thread.run(Thread.java:744)
+
+
+"pool-3-thread-25" Id=71 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@116e6223
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@116e6223
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.poll(ScheduledThreadPoolExecutor.java:1129)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.poll(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	...
+
+
+"pool-3-thread-23" Id=70 RUNNABLE
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.addConditionWaiter(AbstractQueuedSynchronizer.java:1855)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2068)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.poll(ScheduledThreadPoolExecutor.java:1129)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.poll(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@1fa99e7e
+
+
+"pool-3-thread-22" Id=69 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@116e6223
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@116e6223
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.poll(ScheduledThreadPoolExecutor.java:1129)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.poll(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	...
+
+
+"pool-3-thread-16" Id=65 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@116e6223
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@116e6223
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.poll(ScheduledThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.poll(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	...
+
+
+"pool-3-thread-19" Id=64 RUNNABLE
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.addWaiter(AbstractQueuedSynchronizer.java:606)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:1199)
+	at java.util.concurrent.locks.ReentrantLock$NonfairSync.lock(ReentrantLock.java:209)
+	at java.util.concurrent.locks.ReentrantLock.lock(ReentrantLock.java:285)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.size(ScheduledThreadPoolExecutor.java:979)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.isEmpty(ScheduledThreadPoolExecutor.java:988)
+	at java.util.concurrent.ThreadPoolExecutor.processWorkerExit(ThreadPoolExecutor.java:1013)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1160)
+	...
+
+
+"pool-3-thread-17" Id=63 WAITING on java.util.concurrent.locks.ReentrantLock$NonfairSync@1fa99e7e owned by "pool-3-thread-23" Id=70
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.ReentrantLock$NonfairSync@1fa99e7e
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireInterruptibly(AbstractQueuedSynchronizer.java:897)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(AbstractQueuedSynchronizer.java:1222)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(ReentrantLock.java:335)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.poll(ScheduledThreadPoolExecutor.java:1112)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.poll(ScheduledThreadPoolExecutor.java:809)
+	...
+
+
+"Server Shutdown Thread" Id=26 BLOCKED on java.util.ArrayDeque@1b960953 owned by "Server thread" Id=25
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1375)
+	-  blocked on java.util.ArrayDeque@1b960953
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1392)
+	at net.minecraft.network.NetHandlerPlayServer.kickNoHook(NetHandlerPlayServer.java:215)
+	at net.minecraft.network.NetHandlerPlayServer.c(NetHandlerPlayServer.java:202)
+	at net.minecraft.server.management.ServerConfigurationManager.v(ServerConfigurationManager.java:1122)
+	at net.minecraft.server.MinecraftServer.r(MinecraftServer.java:411)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:804)
+
+
+"process reaper" Id=55 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@5e949445
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@5e949445
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	...
+
+
+"Netty Server IO #2" Id=32 BLOCKED on java.util.ArrayDeque@1b960953 owned by "Server thread" Id=25
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1375)
+	-  blocked on java.util.ArrayDeque@1b960953
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1392)
+	at net.minecraft.world.WorldServer.a(WorldServer.java:991)
+	at net.minecraft.network.PacketThreadUtil.a(PacketThreadUtil.java:14)
+	at net.minecraft.network.NetHandlerPlayServer.a(NetHandlerPlayServer.java:231)
+	at net.minecraft.network.play.client.C03PacketPlayer.a(C03PacketPlayer.java:23)
+	at net.minecraft.network.play.client.C03PacketPlayer.a(C03PacketPlayer.java:71)
+	at net.minecraft.network.NetworkManager.channelRead0(NetworkManager.java:99)
+	...
+
+
+"Netty Server IO #1" Id=31 RUNNABLE (in native)
+	at sun.nio.ch.KQueueArrayWrapper.kevent0(Native Method)
+	at sun.nio.ch.KQueueArrayWrapper.poll(KQueueArrayWrapper.java:198)
+	at sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:103)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@3c898ace
+	-  locked java.util.Collections$UnmodifiableSet@6f00a94f
+	-  locked sun.nio.ch.KQueueSelectorImpl@44f7e96d
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:596)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:306)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	...
+
+
+"File IO Thread" Id=51 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.world.storage.ThreadedFileIOBase.c(ThreadedFileIOBase.java:54)
+	at net.minecraft.world.storage.ThreadedFileIOBase.run(ThreadedFileIOBase.java:31)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Server Watchdog" Id=49 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:446)
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:41)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"pool-3-thread-8" Id=48 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@116e6223
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@116e6223
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.poll(ScheduledThreadPoolExecutor.java:1129)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.poll(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	...
+
+
+"MCStats / Plugin Metrics" Id=40 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.canarymod.metrics.Metrics$1.run(Metrics.java:267)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Server IO #0" Id=30 RUNNABLE (in native)
+	at sun.nio.ch.KQueueArrayWrapper.kevent0(Native Method)
+	at sun.nio.ch.KQueueArrayWrapper.poll(KQueueArrayWrapper.java:198)
+	at sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:103)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@3ebb6b0a
+	-  locked java.util.Collections$UnmodifiableSet@4e9449e9
+	-  locked sun.nio.ch.KQueueSelectorImpl@24b4cba5
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:596)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:306)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	...
+
+
+"Thread-6" Id=29 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ff3e2df
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ff3e2df
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at com.mojang.util.QueueLogAppender.getNextLogEvent(QueueLogAppender.java:77)
+	at net.canarymod.util.SysOutWriterThread.run(SysOutWriterThread.java:72)
+
+
+"DestroyJavaVM" Id=27 RUNNABLE
+
+
+"Server thread" Id=25 RUNNABLE
+	at jdk.nashorn.internal.runtime.ScriptObject.ensureSpillSize(ScriptObject.java:3705)
+	at jdk.nashorn.internal.runtime.ScriptObject.initUserAccessors(ScriptObject.java:956)
+	at jdk.nashorn.internal.objects.NativeStrictArguments.<init>(NativeStrictArguments.java:83)
+	at jdk.nashorn.internal.objects.NativeArguments.allocate(NativeArguments.java:270)
+	at jdk.nashorn.internal.objects.Global.allocateArguments(Global.java:2260)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$381$\^eval\_.L:1$move(<eval>)
+	at java.lang.invoke.LambdaForm$DMH/1523554304.invokeStatic_LL_L(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$BMH/1587361034.reinvoke(LambdaForm$BMH)
+	...
+
+
+"Server Infinisleeper" Id=24 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:98)
+
+
+"NonBlockingInputStreamThread" Id=23 WAITING on jline.internal.NonBlockingInputStream@3af53110
+	at java.lang.Object.wait(Native Method)
+	-  waiting on jline.internal.NonBlockingInputStream@3af53110
+	at jline.internal.NonBlockingInputStream.run(NonBlockingInputStream.java:278)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Snooper Timer" Id=20 TIMED_WAITING on java.util.TaskQueue@5642fca6
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@5642fca6
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	at java.util.TimerThread.run(Timer.java:505)
+
+
+"TimerQueue" Id=19 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@148c0978
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@148c0978
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.DelayQueue.take(DelayQueue.java:223)
+	at javax.swing.TimerQueue.run(TimerQueue.java:171)
+	at java.lang.Thread.run(Thread.java:745)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@54a9ec28
+
+
+"Thread-3" Id=18 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7e2c748
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7e2c748
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at com.mojang.util.QueueLogAppender.getNextLogEvent(QueueLogAppender.java:77)
+	at net.minecraft.server.gui.MinecraftServerGui$4.run(MinecraftServerGui.java:147)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"AWT-EventQueue-0" Id=14 RUNNABLE
+	at java.lang.Runtime.freeMemory(Native Method)
+	at net.minecraft.server.gui.StatsComponent.a(StatsComponent.java:45)
+	at net.minecraft.server.gui.StatsComponent.access$000(StatsComponent.java:16)
+	at net.minecraft.server.gui.StatsComponent$1.actionPerformed(StatsComponent.java:32)
+	at javax.swing.Timer.fireActionPerformed(Timer.java:313)
+	at javax.swing.Timer$DoPostEvent.run(Timer.java:245)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	...
+
+
+"Java2D Disposer" Id=13 WAITING on java.lang.ref.ReferenceQueue$Lock@4684acde
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@4684acde
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at sun.java2d.Disposer.run(Disposer.java:148)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Java2D Queue Flusher" Id=12 TIMED_WAITING on sun.java2d.opengl.OGLRenderQueue$QueueFlusher@5dd7d08a
+	at java.lang.Object.wait(Native Method)
+	-  waiting on sun.java2d.opengl.OGLRenderQueue$QueueFlusher@5dd7d08a
+	at sun.java2d.opengl.OGLRenderQueue$QueueFlusher.run(OGLRenderQueue.java:203)
+
+
+"AWT-Shutdown" Id=10 WAITING on java.lang.Object@2964d581
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Object@2964d581
+	at java.lang.Object.wait(Object.java:502)
+	at sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:295)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"AppKit Thread" Id=9 WAITING on net.minecraft.server.MinecraftServer$2@4eeb14e0
+	at java.lang.Object.wait(Native Method)
+	-  waiting on net.minecraft.server.MinecraftServer$2@4eeb14e0
+	at java.lang.Thread.join(Thread.java:1245)
+	at java.lang.Thread.join(Thread.java:1319)
+	at java.lang.ApplicationShutdownHooks.runHooks(ApplicationShutdownHooks.java:106)
+	at java.lang.ApplicationShutdownHooks$1.run(ApplicationShutdownHooks.java:46)
+	at java.lang.Shutdown.runHooks(Shutdown.java:123)
+	at java.lang.Shutdown.sequence(Shutdown.java:167)
+	at java.lang.Shutdown.exit(Shutdown.java:212)
+	-  locked java.lang.Class@38ad8f62
+	...
+
+
+"Signal Dispatcher" Id=4 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@381cfe8a
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@381cfe8a
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@37dbecd5
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@37dbecd5
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:157)
+
+
+
+Stacktrace:
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8
+	Operating System: Mac OS X (x86_64) version 10.9.5
+	Java Version: 1.8.0_66, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 2420166440 bytes (2308 MB) / 3817865216 bytes (3641 MB) up to 3817865216 bytes (3641 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 20; []
+	Is Modded: Definitely; Server brand changed to 'CanaryMod'
+	Type: Dedicated Server (map_server.txt)
