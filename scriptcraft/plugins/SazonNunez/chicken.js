@@ -8,14 +8,13 @@ exports.WatchChicken = function() {
 }
 
 exports.SpawnChicken = function() {
-	var Canary = Packages.net.canarymod.Canary;
-    var entityFactory = Canary.factory().entityFactory;
+    var entityFactory = Packages.net.canarymod.Canary.factory().entityFactory;
 	var CHICKEN = Packages.net.canarymod.api.entity.EntityType.CHICKEN;	
 	
     for (var i = 0; i < 1; i++) {
         var newLoc = self.location;
-        var chicken = entityFactory.newEntity(CHICKEN, newLoc);
-        chicken.spawn();
+        var newChicken = entityFactory.newEntity(CHICKEN, newLoc);
+        newChicken.spawn();
     }
 }
 
