@@ -189,6 +189,7 @@ _startGame();
  players can join and leave the game by typing `jsp cowclicker`
  */
 command( 'cowclicker', function( params, sender ) {
+    echo("d");
   if ( !store[sender.name] ) {
     _addPlayer( sender );
   } else {

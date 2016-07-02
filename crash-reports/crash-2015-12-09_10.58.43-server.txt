@@ -1,0 +1,60 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 12/9/15 10:58 AM
+Description: Exception ticking world
+
+java.util.NoSuchElementException
+	at java.util.concurrent.ConcurrentHashMap$KeyIterator.next(ConcurrentHashMap.java:3416)
+	at net.minecraft.world.gen.ChunkProviderServer.d(ChunkProviderServer.java:285)
+	at net.minecraft.world.WorldServer.c(WorldServer.java:178)
+	at net.minecraft.server.MinecraftServer.z(MinecraftServer.java:671)
+	at net.minecraft.server.dedicated.DedicatedServer.z(DedicatedServer.java:446)
+	at net.minecraft.server.MinecraftServer.y(MinecraftServer.java:589)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:491)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.util.concurrent.ConcurrentHashMap$KeyIterator.next(ConcurrentHashMap.java:3416)
+	at net.minecraft.world.gen.ChunkProviderServer.d(ChunkProviderServer.java:285)
+	at net.minecraft.world.WorldServer.c(WorldServer.java:178)
+
+-- Affected level --
+Details:
+	Level name: default
+	All players: 1 total; [EntityPlayerMP['SazonNunez'/155, l='default', x=-515.62, y=4.00, z=-761.34]]
+	Chunk stats: ServerChunkCache: 441 Drop: 0
+	Level seed: 2151361310212770970
+	Level generator: ID 01 - flat, ver 0. Features enabled: true
+	Level generator options: 
+	Level spawn location: -555.00,4.00,-759.00 - World: (-555,4,-759), Chunk: (at 5,0,9 in -35,-48; contains blocks -560,0,-768 to -545,255,-753), Region: (-2,-2; contains chunks -64,-64 to -33,-33, blocks -1024,0,-1024 to -513,255,-513)
+	Level time: 84122 game time, 12268 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 82386 (now: false), thunder time: 15133 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.z(MinecraftServer.java:671)
+	at net.minecraft.server.dedicated.DedicatedServer.z(DedicatedServer.java:446)
+	at net.minecraft.server.MinecraftServer.y(MinecraftServer.java:589)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:491)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8
+	Operating System: Mac OS X (x86_64) version 10.9.5
+	Java Version: 1.8.0_66, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1135180224 bytes (1082 MB) / 1243611136 bytes (1186 MB) up to 3817865216 bytes (3641 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 20; [EntityPlayerMP['SazonNunez'/155, l='default', x=-515.62, y=4.00, z=-761.34]]
+	Is Modded: Definitely; Server brand changed to 'CanaryMod'
+	Type: Dedicated Server (map_server.txt)
